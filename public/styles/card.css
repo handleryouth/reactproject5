@@ -90,9 +90,8 @@
 }
 
 .border {
-  border-right: 7px dotted gray;
+  border-right: 0.4rem dotted gray;
   padding-right: 0.4rem;
-  border-right: 7px dotted gray;
 }
 
 @media all and (max-width: 920px) {
@@ -111,9 +110,6 @@
 }
 
 @media all and (max-width: 820px) {
-
-
-
   .card-container,
   .left-card-section {
     flex-direction: column;
@@ -123,6 +119,7 @@
   .card-container {
     margin: 8vw auto;
     position: relative;
+    width: 80%;
   }
 
   .border {
@@ -133,6 +130,8 @@
   .left-card-section {
     font-size: 3.5vw;
     width: 100%;
+    border-bottom: 2px solid black;
+    margin: 1rem 0 1rem 0;
   }
 
   .condition,
@@ -142,7 +141,7 @@
 
   .keytag {
     font-size: 2.8vw;
-    margin: 0 1vw 0 0;
+    margin: 0;
   }
 
   .company-image {
@@ -150,5 +149,13 @@
     position: absolute;
     bottom: 90%;
     margin: 0;
+  }
+
+  .right-card-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 90px);
+    column-gap: 5px;
+    row-gap: 5px;
   }
 }
