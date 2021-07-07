@@ -1,0 +1,81 @@
+.filter-container {
+  width: 90%;
+  max-width: 78rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px -1px 14px 0px rgba(0, 0, 0, 0.75);
+  top: -2.5rem;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.filter-item {
+  display: flex;
+  background-color: hsl(180, 52%, 96%);
+  margin-right: 2rem;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.clear-container {
+  margin-left: 2rem;
+}
+
+.item-container {
+  display: flex;
+  flex-grow: 1;
+  overflow-x: auto;
+}
+
+.filter-item p {
+  margin: 0 1rem 0 0.5rem;
+}
+
+.cross-container {
+  display: flex;
+  background-color: hsl(180, 29%, 50%);
+  padding: 0.5rem 0.5rem;
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.cross-container:hover {
+  background-color: black;
+  transition: all 0.2s ease;
+}
+
+.cross-image {
+  width: 21px;
+}
+
+.clear {
+  cursor: pointer;
+}
+
+.clear:hover {
+  text-decoration: underline;
+  color: hsl(180, 29%, 50%);
+}
+
+
+
+@media all and (max-width: 1390px){
+    .filter-container{
+        left: 5%;
+        top: -1.5%;
+    }
+}
+
+@media all and (max-width : 820px){
+    .filter-container{
+        font-size: 2.5vw;
+        top: -3%;
+      }
+      .cross-image{
+       width: 2vw; 
+      }
+}

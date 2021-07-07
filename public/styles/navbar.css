@@ -1,0 +1,9 @@
+.background-header {
+  width: 100%;
+}
+
+@media all and (max-width: 820px) {
+  .navbar-container {
+    margin-bottom: 12vw;
+  }
+}

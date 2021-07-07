@@ -1,0 +1,154 @@
+.content-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem auto 2rem auto;
+  width: 90%;
+  max-width: 78rem;
+  box-shadow: 1px 1px 23px 1px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.right-card-section,
+.left-card-section,
+.card-branding,
+.card-detail {
+  display: flex;
+}
+
+.left-card-section {
+  align-items: center;
+}
+
+.keytag {
+  margin: 0 1rem;
+  background-color: hsl(180, 31%, 95%);
+  border: none;
+  color: hsl(180, 29%, 50%);
+  padding: 0.4rem 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.keytag:hover {
+  background-color: hsl(180, 29%, 50%);
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.role {
+  margin: 0;
+  cursor: pointer;
+}
+
+.role:hover {
+  color: hsl(180, 29%, 50%);
+  transition: all 0.2s ease;
+}
+
+.company-image {
+  margin: 0 1rem;
+}
+
+.card-branding {
+  align-items: center;
+}
+
+.company-name {
+  color: hsl(180, 29%, 50%);
+}
+
+.condition,
+.featured {
+  color: white;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.9rem;
+  margin: 0 0.5rem;
+  border-radius: 50px;
+}
+
+.condition {
+  background-color: hsl(180, 29%, 50%);
+  cursor: context-menu;
+}
+
+.featured {
+  background-color: black;
+  cursor: context-menu;
+}
+
+.card-detail p {
+  margin-right: 0.6rem;
+}
+
+.border {
+  border-right: 7px dotted gray;
+  padding-right: 0.4rem;
+  border-right: 7px dotted gray;
+}
+
+@media all and (max-width: 920px) {
+  .left-card-section,
+  .keytag {
+    font-size: 1.5vw;
+  }
+
+  .condition,
+  .featured {
+    font-size: 1vw;
+  }
+}
+.border {
+  padding-right: 0.25rem;
+}
+
+@media all and (max-width: 820px) {
+
+
+
+  .card-container,
+  .left-card-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-container {
+    margin: 8vw auto;
+    position: relative;
+  }
+
+  .border {
+    padding-right: 1.25rem;
+    border-right: 2.5vw dotted gray;
+  }
+
+  .left-card-section {
+    font-size: 3.5vw;
+    width: 100%;
+  }
+
+  .condition,
+  .featured {
+    font-size: 2vw;
+  }
+
+  .keytag {
+    font-size: 2.8vw;
+    margin: 0 1vw 0 0;
+  }
+
+  .company-image {
+    width: 15vw;
+    position: absolute;
+    bottom: 90%;
+    margin: 0;
+  }
+}
