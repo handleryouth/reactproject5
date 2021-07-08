@@ -26,7 +26,7 @@ function Filter() {
           return (
             <div className="filter-item">
               <div>
-                <p>{item.name}</p>
+                <p>{item}</p>
               </div>
               <div onClick={Removeitem} className="cross-container">
                 <img

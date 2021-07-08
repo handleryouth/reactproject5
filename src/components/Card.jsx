@@ -4,12 +4,13 @@ import { filterContext } from "../contexts/filtercontext";
 function Card(props) {
   const { items, setItems } = useContext(filterContext);
 
+
   function filtering(event) {
     let eventitem = event.target.textContent;
     setItems((prevState) => {
-      const flag = items.findIndex((i) => i.name === eventitem);
+      const flag = items.findIndex((i) => i === eventitem);
       if (flag === -1) {
-        return [...prevState, { name: eventitem }];
+        return [...prevState, eventitem];
       } else {
         return [...prevState];
       }
@@ -46,7 +47,11 @@ function Card(props) {
 
       <div className="right-card-section">
         {keytag.map((keytag) => {
-          return <button className="keytag" onClick={filtering}>{keytag}</button>;
+          return (
+            <button className="keytag" onClick={filtering}>
+              {keytag}
+            </button>
+          );
         })}
       </div>
     </div>

@@ -154,7 +154,7 @@
   .right-card-section {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 90px);
+    grid-template-columns: repeat(auto-fit, 116px);
     column-gap: 5px;
     row-gap: 5px;
   }
