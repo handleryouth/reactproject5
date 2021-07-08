@@ -30,7 +30,7 @@ function Content() {
       });
     });
 
-    indexing.map((obj) => {
+    indexing.map((obj) => (
       <Card
         company={obj.company}
         image={obj.Image}
@@ -41,8 +41,8 @@ function Content() {
         keytag={obj.keytag}
         condition={obj.condition ? obj.condition : null}
         featured={obj.featured ? obj.featured : null}
-      />;
-    });
+      />
+    ));
   }
 
   return (
