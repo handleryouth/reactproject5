@@ -1,5 +1,8 @@
+import { v4 as uuidv4 } from 'uuid';
+
 const job = [
   {
+    id:uuidv4(),
     company: "Photosnap",
     role: "Senior Frontend Developer",
     timeposted: "1d ago",
@@ -11,6 +14,7 @@ const job = [
     featured: "FEATURED"
   },
   {
+    id:uuidv4(),
     company: "Manage",
     role: "Fullstack Developer",
     timeposted: "1d ago",
@@ -22,6 +26,7 @@ const job = [
     featured: "FEATURED"
   },
   {
+    id:uuidv4(),
     company: "Account",
     role: "Junior Frontend Developer",
     timeposted: "2d ago",
@@ -32,6 +37,7 @@ const job = [
     condition: "NEW!",
   },
   {
+    id:uuidv4(),
     company: "MyHome",
     role: "Junior Frontend Developer",
     timeposted: "5d ago",
@@ -41,6 +47,7 @@ const job = [
     keytag: ["Frontend", "Junior", "CSS", "JavaScript"]
   },
   {
+    id:uuidv4(),
     company: "Loop Studios",
     role: "Software Engineer",
     timeposted: "1w ago",
@@ -50,6 +57,7 @@ const job = [
     keytag:["Fullstack", "Midweight", "Javascript", "Sass", "Ruby"]
   },
   {
+    id:uuidv4(),
     company: "FaceIt",
     role : "Junior Backend Developer",
     timeposted : "2w ago",
@@ -59,6 +67,7 @@ const job = [
     keytag:["Backend", "Junior", "Ruby", "RoR"]
   },
   {
+    id:uuidv4(),
     company: "Shortly",
     role : "Junior Developer",
     timeposted : "2w ago",
@@ -68,6 +77,7 @@ const job = [
     keytag: ["Frontend", "Junior", "HTML", "Sass", "JavaScript"]
   },
   {
+    id:uuidv4(),
     company: "Insure",
     role : "Junior Frontend Developer",
     timeposted : "2w ago",
@@ -77,6 +87,7 @@ const job = [
     keytag: ["Frontend", "Junior", "Vue", "JavaScript", "Sass"]
   },
   {
+    id:uuidv4(),
     company: "Eyecam Co.",
     role : "Full Stack Engineer",
     timeposted : "3w ago",
@@ -86,6 +97,7 @@ const job = [
     keytag: ["Fullstack", "Midweight", "JavaScript", "Django", "Python"]
   },
   {
+    id:uuidv4(),
     company: "The Air Filter Company",
     role : "Front-end Dev",
     timeposted : "1mo ago",

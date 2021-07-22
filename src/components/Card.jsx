@@ -1,28 +1,14 @@
-import React, { useContext } from "react";
-import { filterContext } from "../contexts/filtercontext";
+import { v4 as uuidv4 } from 'uuid';
+import Keytag from "./Keytag";
 
 function Card(props) {
-  const { items, setItems } = useContext(filterContext);
-
-
-  function filtering(event) {
-    let eventitem = event.target.textContent;
-    setItems((prevState) => {
-      const flag = items.findIndex((i) => i === eventitem);
-      if (flag === -1) {
-        return [...prevState, eventitem];
-      } else {
-        return [...prevState];
-      }
-    });
-  }
-
+  // keytag is the name of the tags for filter
   const keytag = props.keytag;
   return (
     <div className="card-container">
       <div className="left-card-section">
         <div>
-          <img className="company-image" src={props.image} alt="Logo" />
+          <img className="company-image" src={props.Image} alt="Logo" />
         </div>
 
         <div>
@@ -48,9 +34,7 @@ function Card(props) {
       <div className="right-card-section">
         {keytag.map((keytag) => {
           return (
-            <button className="keytag" onClick={filtering}>
-              {keytag}
-            </button>
+            <Keytag key={uuidv4()} keytag={keytag}/>
           );
         })}
       </div>
